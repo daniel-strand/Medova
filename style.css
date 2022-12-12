@@ -33,7 +33,7 @@ main{
 }
 
 .nav{
-    width: 68%;
+    width: 60%;
     margin-top: 38px;
 
     display: flex;
@@ -81,7 +81,22 @@ main{
         font-size: 17pt;
         margin-top: -100px;
     }
-  }
+
+    .navfooter a{
+        font-size: 9pt;
+
+    }
+    .icons{
+        scale: 75%;
+    }
+    .icons img{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    }
+    
+
+  
 
   @media only screen and (min-width: 927px) {
     .header-mobil {
@@ -204,7 +219,7 @@ main{
 }
 
 .join-button:hover{
-    background-color:white;
+    background-color:#E6DED3;
     color: #09412C;
 
 }
@@ -218,4 +233,49 @@ main{
 
     padding-top: 100px;
 
+}
+
+
+
+/* HER STARTER FOOTEREN */
+footer {
+    height: 200px;
+    background-color: #09412C;
+}
+
+/* Ikonerne i footeren */
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-left: 30%;
+    margin-right: 30%;
+
+
+    padding-top: 30px;
+}
+
+
+
+/* Navigation i footeren */
+.navfooter {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.navfooter a {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    
+}
+
+/* vertikal streg mellem nav i footeren */
+.border {
+    border-right: 2px solid white;
 }
