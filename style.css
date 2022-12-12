@@ -4,16 +4,16 @@
     box-sizing: 0;
 }
 
-header{
-    height: 120px;
+.header-pc{
+    height: 100px;
 
     width: 100%;
 
     background-color: #09412C; 
 
-    box-shadow: 0px 3px 6px gray;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0);
 
-    position: sticky;
+    position: fixed;
 }
 
 .headercontent{
@@ -22,35 +22,200 @@ header{
 }
 
 
-header img{
-    height: 100px;
+.header-pc img{
+    height: 80px;
 
     margin-top: 10px;
 }
 
+main{
+    padding-top: 100px;
+}
+
 .nav{
     width: 68%;
-    margin-top: 48px;
-
+    margin-top: 38px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     float: right;
-
 }
 
 .nav a{
     text-decoration: none;
     color: white;
 
-    font-size: 16pt;
-
+    font-size: 15pt;
+    font-family: 'Raleway';
+    font-weight: 300;
 }
 
-.prod1{
-    height: 800px;
+@media only screen and (max-width: 927px) {
+    .header-pc {
+        display: none;
+    }
+    main{
+        padding-top: 60px;
+    }
+    .main-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .emballage img{
+        scale: 80%;
+    }
+    .main-content h2{
+        font-size: 14pt;
+    }
+
+    .produkt-text{
+        min-width: 360px;
+    }
+
+    .main-content .produkt-text p{
+        font-size: 11pt;
+    }
+
+    .main-content .produkt-text h2{
+        font-size: 17pt;
+        margin-top: -100px;
+    }
+  }
+
+  @media only screen and (min-width: 927px) {
+    .header-mobil {
+       display: none;
+    }
+  }
+
+
+/*Header mobil start*/
+.header-mobil img{
+    height: 60px;
+
+    margin-top: 10px;
+}
+
+.header-mobil{
+    height: 80px;
+
+    width: 100%;
+
+    background-color: #09412C; 
+
+    box-shadow: 0px 3px 6px rgb(0, 0, 0);
+
+    position: fixed;
+
+    z-index: 1;
+}
+
+.burger{
+    float: right;
+}
+
+.burger img{
+    height: 25px;
+    margin-top: 26px;
+}
+/*Header mobil slut*/
+
+
+
+.produkt{
+    padding-bottom: 100px;
 
     background-color: #E6DED3;
+
 }
 
+.slogan h1{
+    display: flex;
+    justify-content: center;
+
+    padding-top: 40px;
+
+    font-family: 'Bodoni Moda';
+    font-weight: 400;
+    font-size: 30pt;
+}
+
+.emballage img{
+    width: 100%;
+}
+
+.main-content{
+    display: flex;  
+    justify-content: space-around;
+
+    padding-top: 40px;
+
+    margin-left: 14%;
+    margin-right: 14%;
+
+}
+
+
+
+.main-content h2{
+    font-family: 'Bodoni Moda';
+    font-weight: 600;
+    font-size: 25pt;
+    text-align: center;
+
+}
+
+.main-content p{
+    font-family: 'Bodoni Moda';
+    font-weight: 400;
+    font-size: 14pt;
+ 
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+.produkt-text{
+    margin-top: 50px;
+}
+
+
+.join-button{
+    background-color: #09412C;
+    border-color: #09412C;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    padding-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.15s,
+    color 0.15s;
+    padding: 15px 35px;
+
+    margin-left: 30%;
+    margin-top: 40px;
+
+    font-size: 12pt;
+    font-family: 'Raleway';
+    font-weight: 500;
+    
+}
+
+.join-button:hover{
+    background-color:white;
+    color: #09412C;
+
+}
+
+.join-button:active{
+    opacity: 70%;
+}
+
+#produkt-to{
+    background-color: #E8D8D8;
+
+    padding-top: 100px;
+
+}
