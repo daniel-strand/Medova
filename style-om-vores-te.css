@@ -102,32 +102,46 @@ main{
 
 
 .fade-et{
-    animation: fadeInAnimation ease 1s;
+    animation: fadeInAnimation ease 0.5s;
     animation-iteration-count: 1;
+
 }
 
 .fade-to{
-    animation: fadeInAnimation ease 2s;
+    animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
+    
     
 }
 
 .fade-tre{
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 1.5s;
     animation-iteration-count: 1;
+
+   
     
 }
 
 .fade-fire{
-    animation: fadeInAnimation ease 4s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
+
+    
+}
+
+.fade-fem{
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+
     
 }
 
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
+
     }
+    
     100% {
         opacity: 1;
      }
