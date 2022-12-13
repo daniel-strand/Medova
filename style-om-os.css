@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+main{
+    background-image: url(img-medova/temark2.jpg);
+
+    padding-bottom: 200px;
+
+
+}
+
+main div h1{
+    color: white;
+    font-family: 'Bodoni Moda';
+    font-weight: 400;
+    font-size: 29pt;
+
+    text-align: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.box div p{
+    color: white;
+
+    font-size: 14pt;
+    font-family: 'Bodoni Moda';
+
+    margin-top: 50px;
+
+    line-height: 30px;
+}
+
+.box img{
+    width: 200px;
+}
+
+.box{
+    width: 35%;
+    min-width: 410px;
+
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.box div {
+    display: flex;
+    justify-content: center;
+}
+
+.two-box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+
+@media only screen and (max-width: 927px) {
+    main div h1{
+        font-size: 20pt;
+    }
+
+    .box{
+        width: 100%;
+        min-width: 200px;
+
+        max-width: 500px;
+
+        margin-bottom: 70px;
+    }
+
+    
+
+}
+
