@@ -73,6 +73,8 @@ main{
         min-width: 360px;
     }
 
+ 
+
     .main-content .produkt-text p{
         font-size: 11pt;
     }
@@ -123,7 +125,7 @@ main{
 
     position: fixed;
 
-    z-index: 1;
+    z-index: 2;
 }
 
 .burger{
@@ -157,7 +159,20 @@ main{
 }
 
 .emballage img{
-    width: 100%;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+     }
 }
 
 .main-content{
@@ -195,6 +210,11 @@ main{
     margin-top: 50px;
 }
 
+.produkt-text div{
+    display: flex;
+    justify-content: center;
+}
+
 
 .join-button{
     background-color: #09412C;
@@ -209,7 +229,7 @@ main{
     color 0.15s;
     padding: 15px 35px;
 
-    margin-left: 30%;
+
     margin-top: 40px;
 
     font-size: 12pt;
@@ -270,7 +290,7 @@ footer {
     padding-right: 25px;
     text-decoration: none;
     color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway';
     font-weight: 300;
     
 }
