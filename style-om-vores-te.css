@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+main{
+    background-image: url(img-medova/temark1.jpg);
+    background-position: right;
+
+    height: 800px;
+
+    display: flex;
+    justify-content: space-evenly;
+  
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.text-supply-chain{
+    width: 42%;
+    min-width: 448px;
+
+}
+
+.text-supply-chain p{
+    color: white;
+
+    font-size: 14pt;
+    font-family: 'Bodoni Moda';
+
+    margin-top: 50px;
+
+    line-height: 30px;
+}
+
+.text-supply-chain h1{
+    color: white;
+
+    font-size: 24pt;
+    font-family: 'Raleway';
+    font-weight: 500;
+
+    margin-top: 40px;
+}
+
+.supply-chain img{
+    width: 440px;
+    margin-top: 45px;
+}
+
+.supply-chain{
+    float: right;
+}
+
+@media only screen and (max-width: 927px) {
+
+  
+    main{
+        background-image: url(img-medova/temark1-mobile.jpg);
+        background-position: center;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        height: 1200px;
+    }
+
+    .text-supply-chain{
+    
+        margin-top: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
+        min-width: 300px;
+        width: 400px;
+        
+        
+    }
+
+    .text-supply-chain p{
+        font-size: 11pt;
+        margin-top: 30px;
+    }
+
+    .supply-chain img{
+        width: 100%;
+        height:fit-content;
+
+        max-width: 500px;
+
+        margin-top: 0px;
+    }
+
+    .supply-chain{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.fade-et{
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+}
+
+.fade-to{
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    
+}
+
+.fade-tre{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    
+}
+
+.fade-fire{
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
