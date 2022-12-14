@@ -103,7 +103,7 @@ p{
     display: flex;
 }
 
-.two-img h3{
+.two-img a{
     color: white;
 
 }
@@ -118,11 +118,20 @@ p{
 
     height: 400px;
     width: 50%;
-
-    font-size: 15pt;
-    font-family: 'Bodoni Moda';
-
 }
+
+.img-left a, .img-right a{
+    font-size: 17pt;
+    font-family: 'Bodoni Moda';
+    text-decoration: none;
+}
+
+.img-left a:hover, .img-right a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
 
 
 
@@ -134,4 +143,30 @@ p{
 .img-right{
     background-image: url(img-medova/temark-lille-produkt.jpg);
 
+}
+
+
+
+
+@media only screen and (max-width: 927px) {
+    .three-img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .te-tekst{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .two-img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-left, .img-right{
+        width: 100%;
+    
+    }
+    
 }
