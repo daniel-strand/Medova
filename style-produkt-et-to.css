@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+main{
+    background-color: #E6DED3;
+}
+
+.overskrift{
+    display: flex;
+    justify-content: center;
+
+    padding-top: 40px;
+
+    font-family: 'Bodoni Moda';
+    font-weight: 400;
+    font-size: 30pt;
+}
+
+.ginger, .kanel{
+    width: 230px;
+}
+
+.emballage{
+    z-index: 1;
+    width: 300px;
+}
+
+.three-img{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.kanel{
+    animation: fade-right ease 1.5s;
+    animation-iteration-count: 1;
+    
+    margin-left: 50px;
+}
+
+@keyframes fade-right {
+    0% {
+        scale: 0.6;
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0px);
+     }
+}
+
+
+.ginger{
+    animation: fade-left ease 1.5s;
+    animation-iteration-count: 1;
+
+    margin-right: 50px;
+}
+
+@keyframes fade-left {
+    0% {
+        scale: 0.6;
+        transform: translateX(500px);
+    }
+
+
+    100% {
+
+        transform: translateX(0px);
+     }
+}
+
+.te-tekst{
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-bottom: 50px;
+    
+}
+
+p{
+
+    font-size: 14pt;
+    font-family: 'Bodoni Moda';
+
+    width: 400px;
+}
+
+.bio p{
+    margin-bottom: 20px;
+}
+
+
+.specs p{
+    line-height: 50px;
+}
+
+
+.two-img{
+    display: flex;
+}
+
+.two-img h3{
+    color: white;
+
+}
+
+.img-left, .img-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+
+    height: 400px;
+    width: 50%;
+
+    font-size: 15pt;
+    font-family: 'Bodoni Moda';
+
+}
+
+
+
+.img-left{
+    background-image: url(img-medova/tekop-blade.jpg);
+
+}
+
+.img-right{
+    background-image: url(img-medova/temark-lille-produkt.jpg);
+
+}
