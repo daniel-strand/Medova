@@ -20,12 +20,12 @@ main{
 }
 
 .ginger, .kanel{
-    width: 230px;
+    width: 17%;
 }
 
 .emballage{
     z-index: 1;
-    width: 300px;
+    width: 22%;
 }
 
 .three-img{
@@ -73,6 +73,78 @@ main{
      }
 }
 
+
+.ginger-mobil, .kanel-mobil{
+    width: 35%;
+    max-width: 200px;
+
+    margin-bottom: 50px;
+}
+
+.emballage-mobil{
+    width: 50%;
+    max-width: 300px;
+}
+
+.div-emballage-mobil{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 40px;
+}
+
+.div-tegninger{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+.kanel-mobil{
+    animation: fade-right-mobil ease 1.5s;
+    animation-iteration-count: 1;
+    
+}
+
+@keyframes fade-right-mobil {
+    0% {
+        scale: 0.6;
+        transform: translateX(350px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateX(0px);
+     }
+}
+
+
+.ginger-mobil{
+    animation: fade-left-mobil ease 1.5s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes fade-left-mobil {
+    0% {
+        scale: 0.6;
+        transform: translateX(-350px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateX(0px);
+     }
+}
+
+
+
+
+
+
+
+
 .te-tekst{
     display: flex;
     justify-content: space-evenly;
@@ -85,8 +157,13 @@ p{
 
     font-size: 14pt;
     font-family: 'Bodoni Moda';
+}
 
-    width: 400px;
+.bio, .specs{
+    width: 500px;
+
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .bio p{
@@ -124,6 +201,11 @@ p{
     font-size: 17pt;
     font-family: 'Bodoni Moda';
     text-decoration: none;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    text-align: center;
 }
 
 .img-left a:hover, .img-right a:hover{
@@ -159,6 +241,15 @@ p{
         flex-wrap: wrap;
     }
 
+    .te-tekst p{
+        font-size: 11pt;
+    }
+
+    .bio{
+        margin-bottom: 40px;
+
+    }
+
     .two-img{
         display: flex;
         flex-direction: column;
@@ -166,7 +257,20 @@ p{
 
     .img-left, .img-right{
         width: 100%;
-    
+    }
+
+    .img-left a, .img-right a{
+        font-size: 14pt;
+    }
+
+    .three-img{
+        display: none;
     }
     
+}
+
+@media only screen and (min-width: 927px) {
+    .three-img-mobile{
+        display: none;
+    }
 }
