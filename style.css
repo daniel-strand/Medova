@@ -124,7 +124,9 @@ main{
     }
 
     .navfooter a{
-        font-size: 9pt;
+        font-size: 8pt;
+        
+
 
     }
     .icons{
@@ -330,8 +332,8 @@ footer {
 }
 
 .navfooter a {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-decoration: none;
     color: white;
     font-family: 'Raleway';
