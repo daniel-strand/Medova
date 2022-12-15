@@ -76,7 +76,6 @@ main{
   
   .nav a:hover::after {
     transform: scaleY(1);
-
   }
 
 
@@ -92,11 +91,19 @@ main{
     }
     .main-content{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     .emballage img{
-        scale: 80%;
+        max-width: 45%;
+
+        margin-bottom: 40px;
     }
+
+    .emballage{
+        display: flex;
+        justify-content: center;
+    }
+
     .main-content h2{
         font-size: 14pt;
     }
@@ -196,6 +203,10 @@ main{
     animation: fadeInAnimation ease 1.5s;
     animation-iteration-count: 1;
 
+    width: 300px;
+
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 @keyframes fadeInAnimation {
@@ -211,12 +222,11 @@ main{
 
 .main-content{
     display: flex;  
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     padding-top: 40px;
 
-    margin-left: 14%;
-    margin-right: 14%;
+
 
 }
 
