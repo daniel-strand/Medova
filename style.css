@@ -26,6 +26,7 @@
 
 .header-pc img{
     height: 80px;
+    width: auto;
 
     margin-top: 10px;
 }
@@ -254,6 +255,9 @@ main{
 
 .produkt-text{
     margin-top: 50px;
+
+
+
 }
 
 .produkt-text div{
@@ -262,7 +266,7 @@ main{
 }
 
 
-.join-button{
+.cta{
     background-color: #09412C;
     border-color: #09412C;
     border-style: solid;
@@ -273,29 +277,30 @@ main{
     cursor: pointer;
     transition: background-color 0.15s,
     color 0.15s;
-    padding: 15px 35px;
+    padding: 15px 40px;
+
+    text-decoration: none;
 
 
     margin-top: 40px;
 
     font-size: 12pt;
     font-family: 'Raleway';
-    font-weight: 500;
+    font-weight: 300;
     
 }
 
-.join-button:hover{
+.cta:hover{
     background-color:#E6DED3;
     color: #09412C;
 
+    cursor: pointer;
 }
 
-.join-button:active{
-    opacity: 70%;
-}
+
 
 #produkt-to{
-    background-color: #E8D8D8;
+    background-color: #E6DED3;
 
     padding-top: 100px;
 
@@ -306,6 +311,7 @@ main{
 /* HER STARTER FOOTEREN */
 footer {
     height: 200px;
+    width: auto;
     background-color: #09412C;
 }
 

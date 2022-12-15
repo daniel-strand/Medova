@@ -23,6 +23,13 @@ main{
     width: 17%;
 }
 
+.matcha, .vanilje{
+    width: 13%;
+
+    margin-top: -70px;
+}
+
+
 .emballage{
     z-index: 1;
     width: 22%;
@@ -35,7 +42,7 @@ main{
     margin-top: 50px;
 }
 
-.kanel{
+.kanel, .vanilje{
     animation: fade-right ease 1.5s;
     animation-iteration-count: 1;
     
@@ -53,7 +60,7 @@ main{
 }
 
 
-.ginger{
+.ginger, .matcha{
     animation: fade-left ease 1.5s;
     animation-iteration-count: 1;
 
