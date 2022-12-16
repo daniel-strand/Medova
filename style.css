@@ -61,7 +61,7 @@ main{
     position: relative;
   }
   
-  .nav a::after {
+  .nav a:after {
     cursor: pointer;
     content: '';
     position: absolute;
@@ -75,7 +75,7 @@ main{
     transition: transform 0.25s ease-out;
   }
   
-  .nav a:hover::after {
+  .nav a:hover:after {
     transform: scaleY(1);
   }
 
@@ -107,6 +107,12 @@ main{
 
     .main-content h2{
         font-size: 14pt;
+    }
+
+    main .slogan h1{
+        font-size: 22pt;
+
+        margin-top: 20px;
     }
 
     .produkt-text{
@@ -200,6 +206,7 @@ main{
     font-family: 'Bodoni Moda';
     font-weight: 400;
     font-size: 30pt;
+
 }
 
 .emballage img{
@@ -236,7 +243,7 @@ main{
 
 
 .main-content h2{
-    font-family: 'Bodoni Moda';
+    font-family: 'Raleway';
     font-weight: 600;
     font-size: 25pt;
     text-align: center;
