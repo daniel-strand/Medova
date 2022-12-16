@@ -8,6 +8,10 @@ main{
     background-color: #E6DED3;
 }
 
+.main-produkt-to{
+    background-color: #F4E7E7;
+}
+
 .overskrift{
     display: flex;
     justify-content: center;
@@ -213,12 +217,30 @@ p{
     margin-right: 20px;
 
     text-align: center;
-}
 
-.img-left a:hover, .img-right a:hover{
-    cursor: pointer;
-    text-decoration: underline;
+    display: inline-block;
+    position: relative;
 }
+  
+  .two-img div a:after {
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleY(0);
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    border-radius: 1px;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .two-img div a:hover:after {
+    transform: scaleY(1);
+  }
+
+
 
 
 
