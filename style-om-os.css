@@ -15,7 +15,7 @@ main{
 
 main div h1{
     color: white;
-    font-family: 'Bodoni Moda';
+    font-family: 'Raleway';
     font-weight: 400;
     font-size: 29pt;
 
@@ -45,8 +45,8 @@ main div h1{
     width: 35%;
     min-width: 410px;
 
-    margin-left: 23px;
-    margin-right: 23px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .box div {
@@ -65,6 +65,7 @@ main div h1{
 @media only screen and (max-width: 927px) {
     main div h1{
         font-size: 20pt;
+        margin-bottom: 20px;
     }
 
     .box{
