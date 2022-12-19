@@ -265,6 +265,11 @@ p{
         flex-wrap: wrap;
     }
 
+    .overskrift{
+        font-size: 25pt;
+        margin-top: 12px;
+    }
+
     .te-tekst{
         display: flex;
         flex-wrap: wrap;
